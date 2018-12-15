@@ -1,0 +1,60 @@
+
+
+body{
+  margin: 0;
+  padding:0;
+  height: 100vh;
+  background: rgb(16, 76, 102);
+  color: #4D0F98;
+}
+.App{
+  background: white;
+
+  max-width: 1000px;
+  margin: 40px auto;
+
+}
+.Dropdown-menu{
+  position: absolute;
+  background: #fff;
+  width: 200px;
+  border: 1px solid #4D0F98;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+}
+.Dropdown-root {
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 550px) {
+  .Dropdown-root{
+    grid-row: 2;
+    grid-column: span 2;
+    margin-left: calc(5% + 14px);
+  }
+
+}
+.Dropdown-control {
+  height: 40px;
+  border: 1px solid #4D0F98;
+  width: 200px;
+  display: flex;
+  color: #0A304E;
+  padding: 0;
+}
+.Dropdown-placeholder {
+  align-self: center;
+  color: #4D0F98;
+  font-size: 16px;
+  margin-left: 10px;
+
+}
+.Dropdown-arrow{
+  border-width: 8px 8px 0;
+  border-color: #4D0F98 transparent transparent;
+}
+.is-open .Dropdown-arrow{
+  border-width: 0 8px 8px;
+  border-color: transparent transparent #4D0F98;
+}
